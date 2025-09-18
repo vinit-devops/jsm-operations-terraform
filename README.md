@@ -13,7 +13,7 @@ The modules centralize configuration for **teams, integrations, alert policies, 
 - **[`notification_policy`](./notification_policy)** → Configure user/team notification rules  
 - **[`api_integration`](./api_integration)** → Manage API integrations  
 - **[`email_integration`](./email_integration)** → Manage email integrations  
-- **[`integration_action`](./integration_action)** → Define integration actions (e.g., webhook, automation triggers)
+- **[`integration_action`](./integration_action)** → Define integration actions 
 
 ---
 
