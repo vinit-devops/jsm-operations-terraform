@@ -18,11 +18,11 @@ The modules centralize configuration for **teams, integrations, alert policies, 
 ---
 
 ## 🔧 Requirements
-Terraform >= 1.5.0
-Atlassian Terraform Provider
-Valid JSM Ops API Key with required permissions
+- Terraform >= 1.5.0
+- Atlassian Terraform Provider
+- Valid JSM Ops API Key with required permissions
 
 ## 📖 Documentation
-Terraform Provider: Atlassian Operations
-JSM Ops Documentation
+- Terraform Provider: Atlassian Operations
+- JSM Ops Documentation
 
