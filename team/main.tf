@@ -4,7 +4,7 @@ resource "atlassian-operations_team" "this" {
   organization_id = var.organization_id
   display_name    = var.team.display_name
   description     = try(var.team.description, var.team.display_name)
-  team_type       = "MEMBER_INVITE"
+  team_type       = try(var.team.team_type, "MEMBER_INVITE")
 
   member = [
     for m in try(var.team.members, []) : {

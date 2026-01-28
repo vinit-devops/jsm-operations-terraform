@@ -1,14 +1,14 @@
 output "id" {
-  description = "Integration action ID."
-  value       = atlassian-operations_integration_action.this.id
+  description = "ID of the integration action"
+  value       = try(atlassian-operations_integration_action.this[0].id, null)
 }
 
 output "name" {
-  description = "Integration action name."
-  value       = atlassian-operations_integration_action.this.name
+  description = "Name of the integration action"
+  value       = try(atlassian-operations_integration_action.this[0].name, null)
 }
 
 output "integration_id" {
-  description = "Integration ID this action belongs to."
-  value       = atlassian-operations_integration_action.this.integration_id
+  description = "ID of the integration this action belongs to"
+  value       = try(atlassian-operations_integration_action.this[0].integration_id, null)
 }

@@ -12,11 +12,11 @@ output "api_key" {
 
 # Convenience pass-throughs
 output "name" {
-  value       = try(atlassian-operations_api_integration.this[0].name, null)
   description = "Name of the API integration"
+  value       = try(atlassian-operations_api_integration.this[0].name, null)
 }
 
 output "type" {
-  value       = try(atlassian-operations_api_integration.this[0].type, null)
   description = "Type of the API integration"
+  value       = try(atlassian-operations_api_integration.this[0].type, null)
 }

@@ -1,9 +1,14 @@
-output "team_id" {
+output "id" {
   value       = try(atlassian-operations_team.this[0].id, null)
-  description = "The ID of the created JSM team"
+  description = "ID of the created JSM Operations team"
 }
 
-output "team_display_name" {
+output "name" {
   value       = try(atlassian-operations_team.this[0].display_name, null)
-  description = "The display name of the created JSM team"
+  description = "Display name of the team"
+}
+
+output "display_name" {
+  value       = try(atlassian-operations_team.this[0].display_name, null)
+  description = "Display name of the team (alias for name)"
 }
